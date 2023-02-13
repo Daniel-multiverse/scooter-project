@@ -1,7 +1,7 @@
 
 class User {
   constructor(username, password, age) {
-    this.username = usernme
+    this.username = username
     this.password = password
     this.age = age
     this.loggedIn = false

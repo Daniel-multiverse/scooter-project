@@ -22,7 +22,7 @@ class Scooter{
     }
 
 
-    // sets station to prop to the inputted new station
+    // sets station  prop to the inputted station
     // error handling if input is blank
     dock(input){
       if (!input) throw new Error('Docking station required!');

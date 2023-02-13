@@ -5,6 +5,8 @@ const User = require('../src/User')
 
 describe("scooter instance integrity checks", ()=>{
   const scooter = new Scooter ("London")
+  const user1 = new User('Daniel', 'hello', 80);
+
 
 test('instance has correct properties', () => {
   expect(scooter).toHaveProperty("user", null)
