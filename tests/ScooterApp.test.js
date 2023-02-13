@@ -22,6 +22,11 @@ describe('Test Scooterapp and user works together', () => {
     expect(registeredUSers && typeof registeredUSers === 'object').toBe(true)
    });
 
+   
+  test('Throw error if the user is younger than 18.', () => {
+    user1.age = 10;
+    expect(() => { app.register(user1); }).toThrow('too young to for this app');
+  });
 
 
 
