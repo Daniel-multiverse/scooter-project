@@ -10,7 +10,7 @@ test('instance has correct properties', () => {
   expect(scooter).toHaveProperty("user", null)
   expect(scooter).toHaveProperty("charge")
   expect(scooter).toHaveProperty("serial")
-  expect(typeof scooter.isBroken).toBe("Boolean")
+  expect(typeof scooter.isBroken).toBe("boolean")
   expect(scooter.station).toBe("London")
 });
 
